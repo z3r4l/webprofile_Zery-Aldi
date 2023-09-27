@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio | Zery Aldi</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Section Hero Start -->
+    <div class="hero" id="home">
+        <nav>
+            <!-- <h2 class="logo">Zery Aldi</h2> -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#">Skills</a></li> -->
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="content" >
+            <h4>Hello, My Name </h4>
+            <h1>Zery Aldi</h1>
+            <h3>I'M a Web Developer</h3>
+        </div>
+    </div>
+    <!-- Section Hero End -->
+
+    <!-- Section About Start -->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="assets/images/profile.jpeg" alt="my photo">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Web Developer</h5>
+                <p>Halo! I am Zery Aldi, a passionate Web Developer with strong experience in web development. The framework that I like is Laravel, and one of the most popular PHP frameworks in the world. With intensive use of Laravel, I have managed to build a powerful and responsive web application.
+                </p>
+                <a class="buttonTalks">Let's Talk <i class="fa-solid fa-walkie-talkie"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Section About End -->
+
+    <!-- Section Services Start -->
+    <section id="services">
+        <div class="services">
+            <div class="title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h5>Web Development</h5>
+                    <div class="pra">
+                        <p>Build Profesional responsive website optimatized for the most popular search egines.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h5>Low Price</h5>
+                    <div class="pra">
+                        <p>
+                            Tell your great app to me. Adjust your budget. And "BOOM", your app ready to published.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h5>Best Result</h5>
+                    <div class="pra">
+                        <p>
+                            I will give you the best applications for your best ideas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Services End -->
+    <!-- Section Contact Me Start -->
+    <div class="contact-me" id="contact">
+        <h5>Contact Me</h5>
+        <div class="box-contact">
+            <div class="card-contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <p style="font-size: 20px; font-weight: bold;">Location :</p>
+                <p style="margin-top: 5px;">Tanjung Piayu, Batam Kepulauan Riau</p>
+            </div>
+
+            <div class="card-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <p style="font-size: 20px; font-weight: bold;">Email :</p>
+                <p style="margin-top: 5px;">zeri.aldi@gmail.com</p>
+            </div>
+
+            <div class="card-contact">
+                <i class="fa-solid fa-phone"></i>
+                <p style="font-size: 20px; font-weight: bold;">Phone :</p>
+                <p style="margin-top: 5px;">081276769149</p>
+            </div>
+        </div>
+    </div>
+    <!-- Section Contact Me End -->
+
+    <!-- Section Footer Start -->
+    <footer>
+        <p>Zery Aldi</p>
+        <p>Below you want to see more information on my social media</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="end">
+            Copyright By Zery Aldi</p>
+    </footer>
+    <!-- Section Footer End -->
+
+    <script>
+        // Seleksi elemen <nav>
+        const nav = document.querySelector('nav');
+
+        // Menambahkan event listener untuk mendeteksi peristiwa pengguliran
+        window.addEventListener('scroll', () => {
+            // Jika pengguna menggulir ke bawah lebih dari 100 piksel, ubah latar belakang nav menjadi abu-abu
+            if (window.scrollY > 100) {
+                nav.style.backgroundColor = '#053B50';
+            } else {
+                // Jika pengguna menggulir ke atas kembali, atur latar belakang nav menjadi putih lagi
+                nav.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>
