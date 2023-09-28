@@ -12,9 +12,13 @@
    background-image: url(../images/background1.png);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
+   opacity: 0.9;
 }
 
 nav {
+   /* position: fixed;
+   z-index: 99999; */
    display: flex;
    align-items: center;
    justify-content: center;
@@ -25,8 +29,6 @@ nav {
    top: 0;
    left: 0;
    right: 0;
-   position: fixed;
-   z-index: 99999;
 }
 
 .logo {
@@ -42,13 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-   color: white;
+   color: #053B50;
    text-decoration: none;
    font-weight: bold;
    text-transform: capitalize;
+   font-size: 20px;
 }
 nav ul li a:hover {
-   color: #64CCC5;
+   color: #176B87;
    transition: 0.4s;
 }
 
@@ -78,14 +81,30 @@ h4 {
 .about {
    width: 100%;
    padding: 100px 0;
-   background-color: #053B50;
+   /* background-color: #053B50; */
+   position: relative; 
+   overflow: hidden; 
 }
-
+.about::before {
+   content: "";
+   background-image: url(../images/background2.png); 
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.6; 
+   z-index: -1;
+}
 .about img {
    height: 530px;
    width: 430px;
    object-fit: cover;
    border-radius: 10px;
+   z-index: -1;
 }
 .about-text {
    width: 550px;
@@ -100,7 +119,7 @@ h4 {
 }
 
 .about-text h2 {
-   color: #64CCC5;
+   color: #053B50;
    font-size: 75px;
    text-transform: capitalize;
    margin-bottom: 20px;
@@ -122,19 +141,20 @@ h4 {
 }
 .buttonTalks {
    background-color: #EEEEEE;
-   color: black;
+   color: #053B50;
    text-decoration: none;
    border: 2px solid transparent;
    font-weight: bold;
    padding: 13px 30px;
    border-radius: 30px;
    transition: 0.4s;
+   font-size: 18px;
 }
 .buttonTalks:hover {
    background-color: transparent;
    border: 2px solid #EEEEEE;
    cursor: pointer;
-   color: white;
+   color: #EEEEEE;
 }
 .services {
    background: #EEEEEE;
@@ -163,10 +183,10 @@ h4 {
    position: relative;
    overflow: hidden;
    text-align: center;
-
    border-radius: 50px;
    background: #053B50;
    box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+   z-index: 1111;
 }
 .card:hover{
     background: #176B87;
@@ -190,19 +210,35 @@ h4 {
    margin-bottom: 25px;
 }
 .contact-me {
-   background: #053B50;
    width: 100%;
-   padding: 100px 0px;
+   padding: 100px 0;
+   position: relative; /* Tambahkan properti ini */
+   overflow: hidden; /* Tambahkan properti ini */
+}
+.contact-me::before {
+   content: "";
+   background-image: url(../images/background2.png);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.6;
+   z-index: -1;
 }
 .box-contact{
     margin: 100px;
 }
 .contact-me h5 {
-   color: #EEEEEE;
+   color: #053B50;
    font-size: 75px;
    width: 1130px;
    margin: 30px auto;
    text-align: center;
+   z-index: -1;
 }
 .card-contact {
    margin-bottom: 30px;
@@ -215,7 +251,7 @@ h4 {
     color: white;
 }
 .card-contact i:hover{
-    background-color: #B7B7B7;
+    background-color: #053B50;
 }
 .card-contact p{
     margin-left: 10px;
@@ -271,4 +307,20 @@ footer p:nth-child(2){
     bottom: 35px;
     font-size: 16px;
     font-weight: bold;
+}
+#scrollToTopBtn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #64CCC5;
+   color: #EEEEEE; 
+   border: none; 
+   border-radius: 50%; 
+   padding: 20px 30px; 
+   cursor: pointer; 
+   transition: background-color 0.3s ease;
+}
+#scrollToTopBtn i{
+   font-size: 30px;
 }

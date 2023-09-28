@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio | Zery Aldi</title>
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <!-- Css -->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <!-- Font googleapis -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <!-- CDN font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,7 +38,7 @@
             <h4>Hello, My Name </h4>
             <h1>Zery Aldi</h1>
             <h3>I'M a Web Developer</h3>
-            <a class="buttonTalks" style="text-align: center;" href="assets/cv/mycv.pdf">Download CV <i class="fa-solid fa-circle-down" style="margin-left: 20px; font-size: 25px;"></i>
+            <a class="buttonTalks" style="text-align: center;" href="assets/cv/mycv.pdf">Download CV <i class="fa-solid fa-circle-down" style="margin-left: 20px; font-size: 20px;"></i>
             </a>
         </div>
     </div>
@@ -135,21 +137,11 @@
     </footer>
     <!-- Section Footer End -->
 
-    <script>
-        // Seleksi elemen <nav>
-        const nav = document.querySelector('nav');
+    <!-- Button AutoTop Start -->
+    <button id="scrollToTopBtn"><i class="fa-solid fa-up-long"></i></button>
+    <!-- Button AutoTop End -->
 
-        // Menambahkan event listener untuk mendeteksi peristiwa pengguliran
-        window.addEventListener('scroll', () => {
-            // Jika pengguna menggulir ke bawah lebih dari 100 piksel, ubah latar belakang nav menjadi abu-abu
-            if (window.scrollY > 100) {
-                nav.style.backgroundColor = '#053B50';
-            } else {
-                // Jika pengguna menggulir ke atas kembali, atur latar belakang nav menjadi putih lagi
-                nav.style.backgroundColor = 'transparent';
-            }
-        });
-    </script>
+    <!-- Script Js -->
+    <script src="/assets/js/index.js"></script>
 </body>
-
 </html>
